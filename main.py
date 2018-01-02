@@ -62,7 +62,7 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
     # TODO: Implement function
     ## MEAT OF THE PROJECT
 
-    # 1x1 convolution
+    # 1x1 convolution of layer 7
     # need a regulizer or weights are prone to becoming too large or overfitting
     # want to penalize large weights
     # the smaller the value that is passed to regularizer, the less i penalize large weights
@@ -77,11 +77,51 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
     # the stride number is what is upsampling the 1x1 convolution by 2
     # padding needs to be 'same'; 'valid' will give us something other than the size we want
     # we want the same size as the output of the transposed layer
-    layer4_upsample_input = tf.layers.conv2d_transpose(layer7_output_conv_1x1, num_classes, 4, strides = (2, 2),
+    layer7_upsample = tf.layers.conv2d_transpose(layer7_output_conv_1x1, num_classes, 4, strides = (2, 2),
                                         padding = 'same',
                                         kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
-    return None
+    tf.print(layer7_upsample, [tf.shape(layer7_upsample)]) # called when the NN is running
+
+    # 1x1 convolution of layer 4
+    layer4_output_conv_1x1 = tf.layers.conv2d(vgg_layer4_out, num_classes, strides = (1, 1),
+                                              padding = 'same',
+                                              kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
+
+    tf.print(layer4_output_conv_1x1, [tf.shape(layer4_output_conv_1x1)]) # called when the NN is running
+
+    # first skip connection
+    skip_connection_1 = tf.add(layer7_upsample, layer4_output_conv_1x1)
+
+    tf.print(skip_connection_1, [tf.shape(skip_connection_1)]) # called when the NN is running
+
+    # upsample
+    skip_upsample = tf.layers.conv2d_transpose(skip_connection_1, num_classes, 4, strides = (2, 2),
+                                                 padding = 'same',
+                                                 kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
+
+    tf.print(skip_upsample, [tf.shape(skip_upsample)]) # called when the NN is running
+
+    # 1x1 convolution of layer 3
+    layer3_output_conv_1x1 = tf.layers.conv2d(vgg_layer3_out, num_classes, strides = (1, 1),
+                                              padding = 'same',
+                                              kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
+
+    tf.print(layer3_output_conv_1x1, [tf.shape(layer3_output_conv_1x1)]) # called when the NN is running
+
+    # second skip connection
+    skip_connection_2 = tf.add(skip_upsample, layer3_output_conv_1x1)
+
+    tf.print(skip_connection_2, [tf.shape(skip_connection_2)]) # called when the NN is running
+
+    # final upsample
+    output = tf.layers.conv2d_transpose(skip_connection_2, num_classes, 16, strides = (8, 8),
+                                               padding = 'same',
+                                               kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
+
+    tf.print(output, [tf.shape(output)]) # called when the NN is running
+
+    return output
 tests.test_layers(layers)
 
 def optimize(nn_last_layer, correct_label, learning_rate, num_classes):
@@ -94,12 +134,17 @@ def optimize(nn_last_layer, correct_label, learning_rate, num_classes):
     :return: Tuple of (logits, train_op, cross_entropy_loss)
     """
     # TODO: Implement function
+    # make logits a 2D tensor where each row represents a pixel and each column a class
     logits = tf.reshape(nn_last_layer, (-1, num_classes)) # 2D tensor
-    # define cross enthropy loss
-    loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits, correct_label))
-    # use adam optimizer
 
-    return logits, None, loss
+    # define cross enthropy loss
+    loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits = logits, labels = correct_label))
+
+    # use adam optimizer
+    optimizer = tf.train.AdamOptimizer(learning_rate= learning_rate)
+    minimizer = optimizer.minimize(loss)
+
+    return logits, minimizer, loss
 tests.test_optimize(optimize)
 
 def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_loss, input_image,
@@ -120,8 +165,12 @@ def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_l
     # TODO: Implement function
     # pass
     for epoch in epochs:
+        print("EPOCH: ", (epoch+1))
         for image, label in get_batches_fn(batch_size):
-            # train here
+            _, loss = sess.run([train_op, cross_entropy_loss],
+                               feed_dict = {input_image: image, correct_label: label},
+                               print("LOSS: {:.4f}".format(loss)))
+            print()
 
 tests.test_train_nn(train_nn)
 
@@ -151,16 +200,24 @@ def run():
         # TODO: Build NN using load_vgg, layers, and optimize function
         input_layer, keep_prob, layer3, layer4, layer7 = load_vgg(sess, vgg_path)
         final_layer_output = layers(layer3, layer4, layer7, num_classes)
-        optimize(final_layer_output, )
+
+        # TF placeholders
+        correct_label = tf.placeholder(tf.int32, [None, None, None, num_classes], name='correct_label')
+        learning_rate = tf.placeholder(tf.float32, name='learning_rate')
+
+        logits, minimizer, loss = optimize(final_layer_output, correct_label, learning_rate, num_classes)
 
         # TODO: Train NN using the train_nn function
+        epochs = 50
+        batch_size = 10
+        train_nn(sess, epochs, batch_size, get_batches_fn, minimizer, loss, input_layer, correct_label, keep_prob, learning_rate)
 
         # TODO: Save inference data using helper.save_inference_samples
-        #  helper.save_inference_samples(runs_dir, data_dir, sess, image_shape, logits, keep_prob, input_image)
+        helper.save_inference_samples(runs_dir, data_dir, sess, image_shape, logits, keep_prob, input_layer)
 
         # OPTIONAL: Apply the trained model to a video
 
 
 if __name__ == '__main__':
-    print("TESTING")
-    # run()
+    # print("TESTING")
+    run()
