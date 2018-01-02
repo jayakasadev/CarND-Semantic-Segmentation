@@ -35,7 +35,7 @@ def load_vgg(sess, vgg_path):
 
     # from tutorial
     # load the model
-    tf.save_model.loader.load(sess, [vgg_tag], vgg_path)
+    tf.saved_model.loader.load(sess, [vgg_tag], vgg_path)
 
     # get the default graph for the vgg16 model
     graph = tf.get_default_graph() # get the default graph
@@ -67,11 +67,11 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
     # want to penalize large weights
     # the smaller the value that is passed to regularizer, the less i penalize large weights
     # TODO experiment with regularizer values
-    layer7_output_conv_1x1 = tf.layers.conv2d(vgg_layer7_out, num_classes, strides = (1, 1),
+    layer7_output_conv_1x1 = tf.layers.conv2d(vgg_layer7_out, num_classes, 1,
                                 padding = 'same',
                                 kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
-    tf.print(layer7_output_conv_1x1, [tf.shape(layer7_output_conv_1x1)]) # called when the NN is running
+    tf.Print(layer7_output_conv_1x1, [tf.shape(layer7_output_conv_1x1)]) # called when the NN is running
 
     # deconvolution to upsample
     # the stride number is what is upsampling the 1x1 convolution by 2
@@ -81,45 +81,45 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
                                         padding = 'same',
                                         kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
-    tf.print(layer7_upsample, [tf.shape(layer7_upsample)]) # called when the NN is running
+    tf.Print(layer7_upsample, [tf.shape(layer7_upsample)]) # called when the NN is running
 
     # 1x1 convolution of layer 4
-    layer4_output_conv_1x1 = tf.layers.conv2d(vgg_layer4_out, num_classes, strides = (1, 1),
+    layer4_output_conv_1x1 = tf.layers.conv2d(vgg_layer4_out, num_classes, 1,
                                               padding = 'same',
                                               kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
-    tf.print(layer4_output_conv_1x1, [tf.shape(layer4_output_conv_1x1)]) # called when the NN is running
+    tf.Print(layer4_output_conv_1x1, [tf.shape(layer4_output_conv_1x1)]) # called when the NN is running
 
     # first skip connection
     skip_connection_1 = tf.add(layer7_upsample, layer4_output_conv_1x1)
 
-    tf.print(skip_connection_1, [tf.shape(skip_connection_1)]) # called when the NN is running
+    tf.Print(skip_connection_1, [tf.shape(skip_connection_1)]) # called when the NN is running
 
     # upsample
     skip_upsample = tf.layers.conv2d_transpose(skip_connection_1, num_classes, 4, strides = (2, 2),
                                                  padding = 'same',
                                                  kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
-    tf.print(skip_upsample, [tf.shape(skip_upsample)]) # called when the NN is running
+    tf.Print(skip_upsample, [tf.shape(skip_upsample)]) # called when the NN is running
 
     # 1x1 convolution of layer 3
-    layer3_output_conv_1x1 = tf.layers.conv2d(vgg_layer3_out, num_classes, strides = (1, 1),
+    layer3_output_conv_1x1 = tf.layers.conv2d(vgg_layer3_out, num_classes, 1,
                                               padding = 'same',
                                               kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
-    tf.print(layer3_output_conv_1x1, [tf.shape(layer3_output_conv_1x1)]) # called when the NN is running
+    tf.Print(layer3_output_conv_1x1, [tf.shape(layer3_output_conv_1x1)]) # called when the NN is running
 
     # second skip connection
     skip_connection_2 = tf.add(skip_upsample, layer3_output_conv_1x1)
 
-    tf.print(skip_connection_2, [tf.shape(skip_connection_2)]) # called when the NN is running
+    tf.Print(skip_connection_2, [tf.shape(skip_connection_2)]) # called when the NN is running
 
     # final upsample
     output = tf.layers.conv2d_transpose(skip_connection_2, num_classes, 16, strides = (8, 8),
                                                padding = 'same',
                                                kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
-    tf.print(output, [tf.shape(output)]) # called when the NN is running
+    tf.Print(output, [tf.shape(output)]) # called when the NN is running
 
     return output
 tests.test_layers(layers)
@@ -164,13 +164,12 @@ def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_l
     """
     # TODO: Implement function
     # pass
-    for epoch in epochs:
+    for epoch in range(epochs):
         print("EPOCH: ", (epoch+1))
         for image, label in get_batches_fn(batch_size):
             _, loss = sess.run([train_op, cross_entropy_loss],
-                               feed_dict = {input_image: image, correct_label: label},
-                               print("LOSS: {:.4f}".format(loss)))
-            print()
+                               feed_dict = {input_image: image, correct_label: label, keep_prob:0.5, learning_rate:1e-3})
+            print("LOSS: {:.4f}".format(loss), "\n")
 
 tests.test_train_nn(train_nn)
 
@@ -219,5 +218,5 @@ def run():
 
 
 if __name__ == '__main__':
-    # print("TESTING")
+    print("TESTING")
     run()
