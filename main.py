@@ -60,7 +60,26 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
     :return: The Tensor for the last layer of output
     """
     # TODO: Implement function
-    return None
+    ## MEAT OF THE PROJECT
+
+    # 1x1 convolution
+    # need a regulizer or weights are prone to becoming too large or overfitting
+    # want to penalize large weights
+    # the smaller the value that is passed to regularizer, the less i penalize large weights
+    # TODO experiment with regularizer values
+    conv_1x1 = tf.layers.conv2d(vgg_layer7_out, num_classes, 1, padding='same', kernel_regularizer=tf.contrib.layers.l2_regularizer(1e-3))
+
+    # deconvolution to upsample
+    # the stride number is what is upsampling the 1x1 convolution by 2
+    # padding needs to be 'same'; 'valid' will give us something other than the size we want
+    # we want the same size as the output of the transposed layer
+    output = tf.layers.conv2d_transpose(conv_1x1, num_classes, 4, 2, padding='same', kernel_regularizer=tf.contrib.layers.l2_regularizer(1e-3))
+    output = tf.add(output, vgg_layer7_out)
+    output = tf.layers.conv2d_transpose(output, num_classes, 4, 2, padding='same', kernel_regularizer=tf.contrib.layers.l2_regularizer(1e-3))
+    output = tf.add(output, vgg_layer4_out)
+    output = tf.layers.conv2d_transpose(output, num_classes, 4, 8, padding='same', kernel_regularizer=tf.contrib.layers.l2_regularizer(1e-3))
+    output = tf.add(output, vgg_layer3_out)
+    return output
 tests.test_layers(layers)
 
 def optimize(nn_last_layer, correct_label, learning_rate, num_classes):
@@ -73,6 +92,11 @@ def optimize(nn_last_layer, correct_label, learning_rate, num_classes):
     :return: Tuple of (logits, train_op, cross_entropy_loss)
     """
     # TODO: Implement function
+    logits = tf.reshape(nn_last_layer, (-1, num_classes)) # 2D tensor
+    # define cross enthropy loss
+    loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits, correct_label))
+    # use adam optimizer
+
     return None, None, None
 tests.test_optimize(optimize)
 
@@ -92,7 +116,11 @@ def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_l
     :param learning_rate: TF Placeholder for learning rate
     """
     # TODO: Implement function
-    pass
+    # pass
+    for epoch in epochs:
+        for image, label in get_batches_fn(batch_size):
+            # train here
+
 tests.test_train_nn(train_nn)
 
 def run():
