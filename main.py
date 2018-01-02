@@ -32,9 +32,23 @@ def load_vgg(sess, vgg_path):
     vgg_layer3_out_tensor_name = 'layer3_out:0'
     vgg_layer4_out_tensor_name = 'layer4_out:0'
     vgg_layer7_out_tensor_name = 'layer7_out:0'
+
+    # from tutorial
+    # load the model
+    tf.save_model.loader.load(sess, [vgg_tag], vgg_path)
+
+    # get the default graph for the vgg16 model
+    graph = tf.get_default_graph() # get the default graph
+
+    # ask the graph to get tensor by name
+    input_layer = graph.get_tensor_by_name(vgg_input_tensor_name)
+    keep_prob = graph.get_tensor_by_name(vgg_keep_prob_tensor_name)
+    layer3 = graph.get_tensor_by_name(vgg_layer3_out_tensor_name)
+    layer4 = graph.get_tensor_by_name(vgg_layer4_out_tensor_name)
+    layer7 = graph.get_tensor_by_name(vgg_layer7_out_tensor_name)
     
-    return None, None, None, None, None
-# tests.test_load_vgg(load_vgg, tf)
+    return input_layer, keep_prob, layer3, layer4, layer7
+tests.test_load_vgg(load_vgg, tf)
 
 def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
     """
@@ -47,7 +61,7 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
     """
     # TODO: Implement function
     return None
-# tests.test_layers(layers)
+tests.test_layers(layers)
 
 def optimize(nn_last_layer, correct_label, learning_rate, num_classes):
     """
@@ -60,7 +74,7 @@ def optimize(nn_last_layer, correct_label, learning_rate, num_classes):
     """
     # TODO: Implement function
     return None, None, None
-# tests.test_optimize(optimize)
+tests.test_optimize(optimize)
 
 def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_loss, input_image,
              correct_label, keep_prob, learning_rate):
@@ -79,7 +93,7 @@ def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_l
     """
     # TODO: Implement function
     pass
-# tests.test_train_nn(train_nn)
+tests.test_train_nn(train_nn)
 
 def run():
     num_classes = 2
