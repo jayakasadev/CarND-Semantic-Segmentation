@@ -67,19 +67,21 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
     # want to penalize large weights
     # the smaller the value that is passed to regularizer, the less i penalize large weights
     # TODO experiment with regularizer values
-    conv_1x1 = tf.layers.conv2d(vgg_layer7_out, num_classes, 1, padding='same', kernel_regularizer=tf.contrib.layers.l2_regularizer(1e-3))
+    layer7_output_conv_1x1 = tf.layers.conv2d(vgg_layer7_out, num_classes, strides = (1, 1),
+                                padding = 'same',
+                                kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
+
+    tf.print(layer7_output_conv_1x1, [tf.shape(layer7_output_conv_1x1)]) # called when the NN is running
 
     # deconvolution to upsample
     # the stride number is what is upsampling the 1x1 convolution by 2
     # padding needs to be 'same'; 'valid' will give us something other than the size we want
     # we want the same size as the output of the transposed layer
-    output = tf.layers.conv2d_transpose(conv_1x1, num_classes, 4, 2, padding='same', kernel_regularizer=tf.contrib.layers.l2_regularizer(1e-3))
-    output = tf.add(output, vgg_layer7_out)
-    output = tf.layers.conv2d_transpose(output, num_classes, 4, 2, padding='same', kernel_regularizer=tf.contrib.layers.l2_regularizer(1e-3))
-    output = tf.add(output, vgg_layer4_out)
-    output = tf.layers.conv2d_transpose(output, num_classes, 4, 8, padding='same', kernel_regularizer=tf.contrib.layers.l2_regularizer(1e-3))
-    output = tf.add(output, vgg_layer3_out)
-    return output
+    layer4_upsample_input = tf.layers.conv2d_transpose(layer7_output_conv_1x1, num_classes, 4, strides = (2, 2),
+                                        padding = 'same',
+                                        kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
+
+    return None
 tests.test_layers(layers)
 
 def optimize(nn_last_layer, correct_label, learning_rate, num_classes):
@@ -97,7 +99,7 @@ def optimize(nn_last_layer, correct_label, learning_rate, num_classes):
     loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits, correct_label))
     # use adam optimizer
 
-    return None, None, None
+    return logits, None, loss
 tests.test_optimize(optimize)
 
 def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_loss, input_image,
@@ -147,6 +149,9 @@ def run():
         #  https://datascience.stackexchange.com/questions/5224/how-to-prepare-augment-images-for-neural-network
 
         # TODO: Build NN using load_vgg, layers, and optimize function
+        input_layer, keep_prob, layer3, layer4, layer7 = load_vgg(sess, vgg_path)
+        final_layer_output = layers(layer3, layer4, layer7, num_classes)
+        optimize(final_layer_output, )
 
         # TODO: Train NN using the train_nn function
 
