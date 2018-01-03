@@ -22,7 +22,7 @@ else:
 
 
 def load_vgg(sess, vgg_path):
-    print("main::load_vgg")
+    # print("main::load_vgg")
     """
     Load Pretrained VGG Model into TensorFlow.
     :param sess: TensorFlow Session
@@ -53,11 +53,11 @@ def load_vgg(sess, vgg_path):
     layer7 = graph.get_tensor_by_name(vgg_layer7_out_tensor_name)
     
     return input_layer, keep_prob, layer3, layer4, layer7
-print("TEST 1")
+# print("TEST 1")
 tests.test_load_vgg(load_vgg, tf)
 
 def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
-    print("main::layers")
+    # print("main::layers")
     """
     Create the layers for a fully convolutional network.  Build skip-layers using the vgg layers.
     :param vgg_layer7_out: TF Tensor for VGG Layer 3 output
@@ -76,7 +76,7 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
     # TODO experiment with regularizer values
     layer7_output_conv_1x1 = tf.layers.conv2d(vgg_layer7_out, num_classes, 1,
                                 padding = 'same',
-                                kernel_initializer= tf.random_normal_initializer(stddev=0.01),
+                                kernel_initializer= tf.random_normal_initializer(stddev=1e-2),
                                 kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
     tf.Print(layer7_output_conv_1x1, [tf.shape(layer7_output_conv_1x1)]) # called when the NN is running
@@ -87,7 +87,7 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
     # we want the same size as the output of the transposed layer
     layer7_upsample = tf.layers.conv2d_transpose(layer7_output_conv_1x1, num_classes, 4, strides = (2, 2),
                                         padding = 'same',
-                                                 kernel_initializer= tf.random_normal_initializer(stddev=0.01),
+                                                 kernel_initializer= tf.random_normal_initializer(stddev=1e-2),
                                         kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
     tf.Print(layer7_upsample, [tf.shape(layer7_upsample)]) # called when the NN is running
@@ -95,7 +95,7 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
     # 1x1 convolution of layer 4
     layer4_output_conv_1x1 = tf.layers.conv2d(vgg_layer4_out, num_classes, 1,
                                               padding = 'same',
-                                              kernel_initializer= tf.random_normal_initializer(stddev=0.01),
+                                              kernel_initializer= tf.random_normal_initializer(stddev=1e-2),
                                               kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
     tf.Print(layer4_output_conv_1x1, [tf.shape(layer4_output_conv_1x1)]) # called when the NN is running
@@ -108,7 +108,7 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
     # upsample
     skip_upsample = tf.layers.conv2d_transpose(skip_connection_1, num_classes, 4, strides = (2, 2),
                                                padding = 'same',
-                                               kernel_initializer= tf.random_normal_initializer(stddev=0.01),
+                                               kernel_initializer= tf.random_normal_initializer(stddev=1e-2),
                                                kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
     tf.Print(skip_upsample, [tf.shape(skip_upsample)]) # called when the NN is running
@@ -116,7 +116,7 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
     # 1x1 convolution of layer 3
     layer3_output_conv_1x1 = tf.layers.conv2d(vgg_layer3_out, num_classes, 1,
                                               padding = 'same',
-                                              kernel_initializer= tf.random_normal_initializer(stddev=0.01),
+                                              kernel_initializer= tf.random_normal_initializer(stddev=1e-2),
                                               kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
     tf.Print(layer3_output_conv_1x1, [tf.shape(layer3_output_conv_1x1)]) # called when the NN is running
@@ -129,17 +129,17 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
     # final upsample
     output = tf.layers.conv2d_transpose(skip_connection_2, num_classes, 16, strides = (8, 8),
                                         padding = 'same',
-                                        kernel_initializer= tf.random_normal_initializer(stddev=0.01),
+                                        kernel_initializer= tf.random_normal_initializer(stddev=1e-2),
                                         kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
     tf.Print(output, [tf.shape(output)]) # called when the NN is running
 
     return output
-print("TEST 2")
+# print("TEST 2")
 tests.test_layers(layers)
 
 def optimize(nn_last_layer, correct_label, learning_rate, num_classes):
-    print("main::optimize")
+    # print("main::optimize")
     """
     Build the TensorFLow loss and optimizer operations.
     :param nn_last_layer: TF Tensor of the last layer in the neural network
@@ -160,15 +160,15 @@ def optimize(nn_last_layer, correct_label, learning_rate, num_classes):
     tf.Print(loss, [tf.shape(loss)])
 
     # use adam optimizer
-    optimizer = tf.train.AdamOptimizer(learning_rate = learning_rate)
-    minimizer = optimizer.minimize(loss)
-    print("optimize complete")
-    return logits, minimizer, loss
-print("TEST 3")
+    adam = tf.train.AdamOptimizer(learning_rate = learning_rate)
+    optimizer = adam.minimize(loss)
+    # print("optimize complete")
+    return logits, optimizer, loss
+# print("TEST 3")
 tests.test_optimize(optimize)
 
 def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_loss, input_image, correct_label, keep_prob, learning_rate):
-    print("main::train_nn")
+    # print("main::train_nn")
     """
     Train neural network and print out the loss during training.
     :param sess: TF Session
@@ -184,18 +184,21 @@ def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_l
     """
     # TODO: Implement function
     # pass
+    # must initialize all variables before training or it will throw an exception
+    sess.run(tf.global_variables_initializer())
+
     for epoch in range(epochs):
         print("EPOCH: ", (epoch+1))
         for image, label in get_batches_fn(batch_size):
             _, loss = sess.run([train_op, cross_entropy_loss],
-                               feed_dict = {input_image: image, correct_label: label, keep_prob:0.5, learning_rate:1e-3})
+                               feed_dict = {input_image: image, correct_label: label, keep_prob: 5e-1, learning_rate: 1e-3})
             print("LOSS: {:.4f}".format(loss), "\n")
 
-print("TEST 4")
+# print("TEST 4")
 tests.test_train_nn(train_nn)
 
 def run():
-    print("main::run")
+    # print("main::run")
     num_classes = 2
     image_shape = (160, 576)
     data_dir = './data'
@@ -219,30 +222,30 @@ def run():
         #  https://datascience.stackexchange.com/questions/5224/how-to-prepare-augment-images-for-neural-network
 
         # TODO: Build NN using load_vgg, layers, and optimize function
-        print("Build NN using load_vgg, layers, and optimize function")
+        # print("Build NN using load_vgg, layers, and optimize function")
         input_layer, keep_prob, layer3, layer4, layer7 = load_vgg(sess, vgg_path)
         final_layer_output = layers(layer3, layer4, layer7, num_classes)
 
         # TF placeholders
-        print("TF PLACEHOLDERS")
-        correct_label = tf.placeholder(tf.int32, [None, None, None, num_classes], name='correct_label')
-        learning_rate = tf.placeholder(tf.float32, name='learning_rate')
+        # print("TF PLACEHOLDERS")
+        correct_label = tf.placeholder(tf.float32, [None, None, None, num_classes], name = 'correct_label')
+        learning_rate = tf.placeholder(tf.float32, name = 'learning_rate')
 
         logits, minimizer, loss = optimize(final_layer_output, correct_label, learning_rate, num_classes)
 
         # TODO: Train NN using the train_nn function
         epochs = 50
         batch_size = 5
-        print("Train NN using the train_nn function")
+        # print("Train NN using the train_nn function")
         train_nn(sess, epochs, batch_size, get_batches_fn, minimizer, loss, input_layer, correct_label, keep_prob, learning_rate)
 
         # TODO: Save inference data using helper.save_inference_samples
-        print("Save inference data using helper.save_inference_samples")
+        # print("Save inference data using helper.save_inference_samples")
         helper.save_inference_samples(runs_dir, data_dir, sess, image_shape, logits, keep_prob, input_layer)
 
         # OPTIONAL: Apply the trained model to a video
 
 
 if __name__ == '__main__':
-    print("MAIN")
+    # print("MAIN")
     run()
