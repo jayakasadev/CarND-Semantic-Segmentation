@@ -18,6 +18,7 @@ else:
 
 
 def load_vgg(sess, vgg_path):
+    print("main::load_vgg")
     """
     Load Pretrained VGG Model into TensorFlow.
     :param sess: TensorFlow Session
@@ -51,6 +52,7 @@ def load_vgg(sess, vgg_path):
 tests.test_load_vgg(load_vgg, tf)
 
 def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
+    print("main::layers")
     """
     Create the layers for a fully convolutional network.  Build skip-layers using the vgg layers.
     :param vgg_layer7_out: TF Tensor for VGG Layer 3 output
@@ -125,6 +127,7 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
 tests.test_layers(layers)
 
 def optimize(nn_last_layer, correct_label, learning_rate, num_classes):
+    print("main::optimize")
     """
     Build the TensorFLow loss and optimizer operations.
     :param nn_last_layer: TF Tensor of the last layer in the neural network
@@ -149,6 +152,7 @@ tests.test_optimize(optimize)
 
 def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_loss, input_image,
              correct_label, keep_prob, learning_rate):
+    print("main::train_nn")
     """
     Train neural network and print out the loss during training.
     :param sess: TF Session
@@ -174,6 +178,7 @@ def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_l
 tests.test_train_nn(train_nn)
 
 def run():
+    print("main::run")
     num_classes = 2
     image_shape = (160, 576)
     data_dir = './data'
@@ -218,5 +223,5 @@ def run():
 
 
 if __name__ == '__main__':
-    print("TESTING")
+    # print("TESTING")
     run()
