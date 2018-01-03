@@ -6,7 +6,7 @@ from distutils.version import LooseVersion
 import project_tests as tests
 
 # added my Jaya to show progress during training
-tf.logging.set_verbosity(tf.logging.INFO)
+tf.logging.set_verbosity(tf.logging.DEBUG)
 
 # Check TensorFlow Version
 assert LooseVersion(tf.__version__) >= LooseVersion('1.0'), 'Please use TensorFlow version 1.0 or newer.  You are using {}'.format(tf.__version__)
@@ -185,7 +185,7 @@ def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_l
         for image, label in get_batches_fn(batch_size):
             _, loss = sess.run([train_op, cross_entropy_loss],
                                feed_dict = {input_image: image, correct_label: label, keep_prob: 5e-1, learning_rate: 1e-3})
-            print("LOSS: {:.4f}".format(loss), "\n")
+            print("\tLOSS: ", loss)
 
 # print("TEST 4")
 tests.test_train_nn(train_nn)
