@@ -75,6 +75,7 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
     # TODO experiment with regularizer values
     layer7_output_conv_1x1 = tf.layers.conv2d(vgg_layer7_out, num_classes, 1,
                                 padding = 'same',
+                                kernel_initializer= tf.random_normal_initializer(stddev=0.01),
                                 kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
     tf.Print(layer7_output_conv_1x1, [tf.shape(layer7_output_conv_1x1)]) # called when the NN is running
@@ -85,6 +86,7 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
     # we want the same size as the output of the transposed layer
     layer7_upsample = tf.layers.conv2d_transpose(layer7_output_conv_1x1, num_classes, 4, strides = (2, 2),
                                         padding = 'same',
+                                                 kernel_initializer= tf.random_normal_initializer(stddev=0.01),
                                         kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
     tf.Print(layer7_upsample, [tf.shape(layer7_upsample)]) # called when the NN is running
@@ -92,6 +94,7 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
     # 1x1 convolution of layer 4
     layer4_output_conv_1x1 = tf.layers.conv2d(vgg_layer4_out, num_classes, 1,
                                               padding = 'same',
+                                              kernel_initializer= tf.random_normal_initializer(stddev=0.01),
                                               kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
     tf.Print(layer4_output_conv_1x1, [tf.shape(layer4_output_conv_1x1)]) # called when the NN is running
@@ -103,14 +106,16 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
 
     # upsample
     skip_upsample = tf.layers.conv2d_transpose(skip_connection_1, num_classes, 4, strides = (2, 2),
-                                                 padding = 'same',
-                                                 kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
+                                               padding = 'same',
+                                               kernel_initializer= tf.random_normal_initializer(stddev=0.01),
+                                               kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
     tf.Print(skip_upsample, [tf.shape(skip_upsample)]) # called when the NN is running
 
     # 1x1 convolution of layer 3
     layer3_output_conv_1x1 = tf.layers.conv2d(vgg_layer3_out, num_classes, 1,
                                               padding = 'same',
+                                              kernel_initializer= tf.random_normal_initializer(stddev=0.01),
                                               kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
     tf.Print(layer3_output_conv_1x1, [tf.shape(layer3_output_conv_1x1)]) # called when the NN is running
@@ -122,8 +127,9 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
 
     # final upsample
     output = tf.layers.conv2d_transpose(skip_connection_2, num_classes, 16, strides = (8, 8),
-                                               padding = 'same',
-                                               kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
+                                        padding = 'same',
+                                        kernel_initializer= tf.random_normal_initializer(stddev=0.01),
+                                        kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
     tf.Print(output, [tf.shape(output)]) # called when the NN is running
 
@@ -148,7 +154,7 @@ def optimize(nn_last_layer, correct_label, learning_rate, num_classes):
     loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits = logits, labels = correct_label))
 
     # use adam optimizer
-    optimizer = tf.train.AdamOptimizer(learning_rate= learning_rate)
+    optimizer = tf.train.AdamOptimizer(learning_rate = learning_rate)
     minimizer = optimizer.minimize(loss)
 
     return logits, minimizer, loss
