@@ -74,7 +74,7 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
                                 kernel_initializer= tf.random_normal_initializer(stddev=1e-2),
                                 kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
-    tf.Print(layer7_output_conv_1x1, [tf.shape(layer7_output_conv_1x1)]) # called when the NN is running
+    # tf.Print(layer7_output_conv_1x1, [tf.shape(layer7_output_conv_1x1)]) # called when the NN is running
 
     # deconvolution to upsample
     # the stride number is what is upsampling the 1x1 convolution by 2
@@ -85,7 +85,7 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
                                                  kernel_initializer= tf.random_normal_initializer(stddev=1e-2),
                                         kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
-    tf.Print(layer7_upsample, [tf.shape(layer7_upsample)]) # called when the NN is running
+    # tf.Print(layer7_upsample, [tf.shape(layer7_upsample)]) # called when the NN is running
 
     # 1x1 convolution of layer 4
     layer4_output_conv_1x1 = tf.layers.conv2d(vgg_layer4_out, num_classes, 1,
@@ -93,12 +93,12 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
                                               kernel_initializer= tf.random_normal_initializer(stddev=1e-2),
                                               kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
-    tf.Print(layer4_output_conv_1x1, [tf.shape(layer4_output_conv_1x1)]) # called when the NN is running
+    # tf.Print(layer4_output_conv_1x1, [tf.shape(layer4_output_conv_1x1)]) # called when the NN is running
 
     # first skip connection
     skip_connection_1 = tf.add(layer7_upsample, layer4_output_conv_1x1)
 
-    tf.Print(skip_connection_1, [tf.shape(skip_connection_1)]) # called when the NN is running
+    # tf.Print(skip_connection_1, [tf.shape(skip_connection_1)]) # called when the NN is running
 
     # upsample
     skip_upsample = tf.layers.conv2d_transpose(skip_connection_1, num_classes, 4, strides = (2, 2),
@@ -106,7 +106,7 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
                                                kernel_initializer= tf.random_normal_initializer(stddev=1e-2),
                                                kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
-    tf.Print(skip_upsample, [tf.shape(skip_upsample)]) # called when the NN is running
+    # tf.Print(skip_upsample, [tf.shape(skip_upsample)]) # called when the NN is running
 
     # 1x1 convolution of layer 3
     layer3_output_conv_1x1 = tf.layers.conv2d(vgg_layer3_out, num_classes, 1,
@@ -114,12 +114,12 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
                                               kernel_initializer= tf.random_normal_initializer(stddev=1e-2),
                                               kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
-    tf.Print(layer3_output_conv_1x1, [tf.shape(layer3_output_conv_1x1)]) # called when the NN is running
+    # tf.Print(layer3_output_conv_1x1, [tf.shape(layer3_output_conv_1x1)]) # called when the NN is running
 
     # second skip connection
     skip_connection_2 = tf.add(skip_upsample, layer3_output_conv_1x1)
 
-    tf.Print(skip_connection_2, [tf.shape(skip_connection_2)]) # called when the NN is running
+    # tf.Print(skip_connection_2, [tf.shape(skip_connection_2)]) # called when the NN is running
 
     # final upsample
     output = tf.layers.conv2d_transpose(skip_connection_2, num_classes, 16, strides = (8, 8),
@@ -127,7 +127,7 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
                                         kernel_initializer= tf.random_normal_initializer(stddev=1e-2),
                                         kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
 
-    tf.Print(output, [tf.shape(output)]) # called when the NN is running
+    # tf.Print(output, [tf.shape(output)]) # called when the NN is running
 
     return output
 # print("TEST 2")
@@ -146,16 +146,20 @@ def optimize(nn_last_layer, correct_label, learning_rate, num_classes):
     # make logits a 2D tensor where each row represents a pixel and each column a class
     logits = tf.reshape(nn_last_layer, (-1, num_classes)) # 2D tensor
 
-    tf.Print(logits, [tf.shape(logits)])
+    # tf.Print(logits, [tf.shape(logits)])
 
     # define cross enthropy loss
     loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits = logits, labels = correct_label))
 
-    tf.Print(loss, [tf.shape(loss)])
+    # tf.Print(loss, [tf.shape(loss)])
 
     # use adam optimizer
     adam = tf.train.AdamOptimizer(learning_rate = learning_rate)
-    optimizer = adam.minimize(loss)
+    optimizer = adam.minimize(loss) # want this value to get smaller
+
+    # scalar summary for cost tensor
+    # tf.summary.scalar("Cost", loss) # want this to decrease with time
+
     # print("optimize complete")
     return logits, optimizer, loss
 # print("TEST 3")
@@ -177,15 +181,23 @@ def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_l
     :param learning_rate: TF Placeholder for learning rate
     """
     # pass
+    # Merge all the summaries and write them out to /tmp/mnist_logs (by default)
+    # merged = tf.summary.merge_all()
+    # writer = tf.summary.FileWriter('/log/nn_logs', sess.graph)
+
     # must initialize all variables before training or it will throw an exception
     sess.run(tf.global_variables_initializer())
 
     for epoch in range(epochs):
         print("EPOCH: ", (epoch+1))
         for image, label in get_batches_fn(batch_size):
-            _, loss = sess.run([train_op, cross_entropy_loss],
-                               feed_dict = {input_image: image, correct_label: label, keep_prob: 5e-1, learning_rate: 1e-3})
-            print("\tLOSS: ", loss)
+            _, loss = sess.run([train_op, cross_entropy_loss], feed_dict = {input_image: image, correct_label: label, keep_prob: 5e-1, learning_rate: 1e-3})
+            # print(type(summary)) # returns Nonetype
+            # writer.add_summary(summary)
+            print("\tLoss: ", loss)
+
+    # closing the stream used to write to log
+    # writer.close()
 
 # print("TEST 4")
 tests.test_train_nn(train_nn)
@@ -228,7 +240,7 @@ def run():
 
         # TODO: Train NN using the train_nn function
         epochs = 50
-        batch_size = 5
+        batch_size = 10
         # print("Train NN using the train_nn function")
         train_nn(sess, epochs, batch_size, get_batches_fn, minimizer, loss, input_layer, correct_label, keep_prob, learning_rate)
 
