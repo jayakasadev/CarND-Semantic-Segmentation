@@ -150,7 +150,9 @@ def optimize(nn_last_layer, correct_label, learning_rate, num_classes):
 
     # define cross enthropy loss
     loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits = logits, labels = correct_label))
-
+    # added the regularization loss in order to make regularization work overall
+    reg_losses = tf.get_collection(tf.GraphKeys.REGULARIZATION_LOSSES)
+    loss = loss + sum(reg_losses)
     # tf.Print(loss, [tf.shape(loss)])
 
     # use adam optimizer
