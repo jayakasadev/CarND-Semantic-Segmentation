@@ -34,3 +34,14 @@ python main.py
  
  ## How to write a README
 A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
+
+# Results
+1. Loss:  0.0936639
+- Added regularization loss to Cross-Enthropy Loss for overall loss calculation. 
+- batch-size = 10
+- epochs = 50
+- learning_rate = 1e-3
+2. 
+- batch-size = 20
+- epochs = 50
+- learning_rate = 5e-3
