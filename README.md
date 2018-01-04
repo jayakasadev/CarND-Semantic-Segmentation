@@ -41,7 +41,13 @@ A well written README file can enhance your project and portfolio.  Develop your
 - batch-size = 10
 - epochs = 50
 - learning_rate = 1e-3
-2. 
+2. Loss:  1.45224
+- Loss dropper from 73k to .82 in the 22nd epoch. However, it shot back up from there until I terminated training at 25 epochs. Will experiment with batch size first before messing with learning rate.
 - batch-size = 20
-- epochs = 50
+- epochs = terminated at 25
 - learning_rate = 5e-3
+2. 
+- 
+- batch-size = 15
+- epochs = 50
+- learning_rate = 1e-3
