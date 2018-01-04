@@ -37,22 +37,27 @@ A well written README file can enhance your project and portfolio.  Develop your
 
 # Results
 1. Loss:  0.0936639
-- Added regularization loss to Cross-Enthropy Loss for overall loss calculation. 
-- batch-size = 10
-- epochs = 50
-- learning_rate = 1e-3
+    - Added regularization loss to Cross-Enthropy Loss for overall loss calculation. 
+    - batch-size = 10
+    - epochs = 50
+    - learning_rate = 1e-3
 2. Loss:  1.45224
-- Loss dropper from 73k to .82 in the 22nd epoch. However, it shot back up from there until I terminated training at 25 epochs. Will experiment with batch size first before messing with learning rate.
-- batch-size = 20
-- epochs = terminated at 25
-- learning_rate = 5e-3
+    - Loss dropper from 73k to .82 in the 22nd epoch. However, it shot back up from there until I terminated training at 25 epochs. Will experiment with batch size first before messing with learning rate.
+    - batch-size = 20
+    - epochs = terminated at 25
+    - learning_rate = 5e-3
 3. Loss:  0.815233 
-- Loss began to oscillate around 80% starting from epoch 22. No further progress seems possible.
-- batch-size = 15
-- epochs = terminated at epoch 39
-- learning_rate = 1e-3
-4. 
-- 
-- batch-size = 5
-- epochs = 50
-- learning_rate = 1e-3
+    - Loss began to oscillate around 80% starting from epoch 22. No further progress seems possible.
+    - batch-size = 15
+    - epochs = terminated at epoch 39
+    - learning_rate = 1e-3
+4. Loss:  0.48977 
+    - Performance was better than when I trained with batch-size greater than 10. However, it seems the batch is still too small. The loss decreases at a very small rate and gets stuck around 40% at the 30th epoch.
+    - batch-size = 5
+    - epochs = 50
+    - learning_rate = 1e-3
+5. 
+    - 
+    - batch-size = 8
+    - epochs = 50
+    - learning_rate = 1e-3

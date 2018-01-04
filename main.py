@@ -210,9 +210,11 @@ def run():
     image_shape = (160, 576)
     data_dir = './data'
     runs_dir = './runs'
+    print("check that I have the dataset")
     tests.test_for_kitti_dataset(data_dir)
 
     # Download pretrained vgg model
+    print("Download pretrained vgg model if i don't have it")
     helper.maybe_download_pretrained_vgg(data_dir)
 
     # OPTIONAL: Train and Inference on the cityscapes dataset instead of the Kitti dataset.
@@ -229,7 +231,7 @@ def run():
         #  https://datascience.stackexchange.com/questions/5224/how-to-prepare-augment-images-for-neural-network
 
         # TODO: Build NN using load_vgg, layers, and optimize function
-        # print("Build NN using load_vgg, layers, and optimize function")
+        print("Build NN using load_vgg, layers, and optimize function")
         input_layer, keep_prob, layer3, layer4, layer7 = load_vgg(sess, vgg_path)
         final_layer_output = layers(layer3, layer4, layer7, num_classes)
 
@@ -242,15 +244,15 @@ def run():
 
         # TODO: Train NN using the train_nn function
         epochs = 50
-        batch_size = 5
-        # print("Train NN using the train_nn function")
+        batch_size = 8
+        print("Train NN using the train_nn function")
         train_nn(sess, epochs, batch_size, get_batches_fn, minimizer, loss, input_layer, correct_label, keep_prob, learning_rate)
 
         # TODO: Save inference data using helper.save_inference_samples
-        # print("Save inference data using helper.save_inference_samples")
+        print("Save inference data using helper.save_inference_samples")
         helper.save_inference_samples(runs_dir, data_dir, sess, image_shape, logits, keep_prob, input_layer)
 
-        # OPTIONAL: Apply the trained model to a video
+        # TODO: Apply the trained model to a video
 
 
 if __name__ == '__main__':
