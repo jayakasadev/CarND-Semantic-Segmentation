@@ -46,8 +46,13 @@ A well written README file can enhance your project and portfolio.  Develop your
 - batch-size = 20
 - epochs = terminated at 25
 - learning_rate = 5e-3
-2. 
-- 
+3. Loss:  0.815233 
+- Loss began to oscillate around 80% starting from epoch 22. No further progress seems possible.
 - batch-size = 15
+- epochs = terminated at epoch 39
+- learning_rate = 1e-3
+4. 
+- 
+- batch-size = 5
 - epochs = 50
 - learning_rate = 1e-3
