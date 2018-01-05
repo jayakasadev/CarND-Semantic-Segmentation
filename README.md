@@ -61,8 +61,13 @@ A well written README file can enhance your project and portfolio.  Develop your
     - batch-size = 8
     - epochs = 50
     - learning_rate = 5e-3
-6. 
-    - 
+6. Loss:  0.0794493
+    - This is the lowest loss value so far. The model started to get stuck around 10% around the 40th epoch. So it seems I am on the right track with learning_rate and batch size for now.
     - batch-size = 8
+    - epochs = 50
+    - learning_rate = 1e-3
+7. 
+    - 
+    - batch-size = 7
     - epochs = 50
     - learning_rate = 1e-3
