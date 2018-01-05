@@ -1,0 +1,1366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d9a8be82-b251-4a45-b77e-0fa011c22831" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Semantic_Segmentation$main.coverage" NAME="main Coverage Results" MODIFIED="1515095485604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="518">
+              <caret line="246" column="22" lean-forward="false" selection-start-line="246" selection-start-column="22" selection-end-line="246" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="636">
+                <caret line="68" column="1" lean-forward="false" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>TEST 3</find>
+      <find>tf.Pr</find>
+      <find>float</find>
+    </findStrings>
+    <replaceStrings>
+      <replace># tf.Pr</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="40" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Semantic-Segmentation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Semantic-Segmentation" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000000.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000001.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000002.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000003.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000004.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000005.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000006.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000007.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000008.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000009.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000010.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000011.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000012.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000013.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000014.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000015.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000016.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000017.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000018.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000019.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000020.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000021.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000022.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000023.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000024.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000025.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000026.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000027.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000028.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000029.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000030.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000031.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000032.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000033.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000034.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000035.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000036.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000037.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000038.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000039.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000040.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000041.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000042.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000043.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000044.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000045.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000046.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000047.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000048.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000049.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000050.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000051.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000052.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000053.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000054.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000055.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000056.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000057.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000058.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000059.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000060.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000061.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000062.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000063.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000064.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000065.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000066.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000067.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000068.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000069.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000070.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000071.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000072.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000073.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000074.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000075.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000076.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000077.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000078.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000079.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000080.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000081.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000082.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000083.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000084.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000085.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000086.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000087.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000088.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000089.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000090.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000091.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000092.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000093.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000094.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/um_000095.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000000.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000001.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000002.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000003.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000004.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000005.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000006.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000007.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000008.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000009.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000010.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000011.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000012.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000013.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000014.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000015.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000016.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000017.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000018.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000019.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000020.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000021.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000022.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000023.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000024.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000025.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000026.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000027.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000028.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000029.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000030.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000031.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000032.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000033.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000034.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000035.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000036.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000037.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000038.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000039.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000040.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000041.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000042.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000043.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000044.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000045.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000046.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000047.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000048.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000049.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000050.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000051.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000052.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000053.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000054.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000055.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000056.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000057.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000058.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000059.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000060.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000061.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000062.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000063.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000064.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000065.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000066.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000067.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000068.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000069.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000070.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000071.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000072.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000073.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000074.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000075.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000076.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000077.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000078.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000079.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000080.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000081.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000082.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000083.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000084.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000085.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000086.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000087.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000088.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000089.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000090.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000091.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000092.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/umm_000093.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000000.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000001.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000002.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000003.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000004.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000005.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000006.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000007.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000008.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000009.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000010.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000011.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000012.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000013.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000014.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000015.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000016.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000017.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000018.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000019.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000020.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000021.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000022.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000023.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000024.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000025.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000026.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000027.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000028.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000029.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000030.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000031.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000032.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000033.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000034.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000035.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000036.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000037.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000038.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000039.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000040.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000041.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000042.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000043.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000044.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000045.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000046.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000047.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000048.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000049.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000050.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000051.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000052.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000053.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000054.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000055.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000056.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000057.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000058.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000059.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000060.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000061.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000062.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000063.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000064.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000065.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000066.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000067.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000068.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000069.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000070.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000071.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000072.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000073.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000074.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000075.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000076.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000077.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000078.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000079.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000080.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000081.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000082.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000083.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000084.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000085.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000086.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000087.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000088.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000089.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000090.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000091.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000092.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000093.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000094.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000095.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000096.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000097.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000098.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515109133.1171072/uu_000099.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000000.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000001.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000002.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000003.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000004.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000005.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000006.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000007.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000008.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000009.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000010.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000011.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000012.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000013.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000014.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000015.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000016.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000017.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000018.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000019.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000020.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000021.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000022.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000023.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000024.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000025.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000026.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000027.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000028.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000029.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000030.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000031.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000032.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000033.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000034.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000035.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000036.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000037.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000038.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000039.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000040.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000041.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000042.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000043.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000044.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000045.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000046.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000047.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000048.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000049.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000050.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000051.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000052.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000053.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000054.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000055.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000056.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000057.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000058.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000059.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000060.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000061.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000062.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000063.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000064.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000065.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000066.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000067.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000068.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000069.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000070.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000071.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000072.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000073.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000074.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000075.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000076.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000077.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000078.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000079.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000080.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000081.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000082.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000083.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000084.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000085.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000086.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000087.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000088.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000089.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000090.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000091.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000092.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000093.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000094.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/um_000095.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000000.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000001.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000002.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000003.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000004.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000005.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000006.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000007.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000008.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000009.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000010.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000011.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000012.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000013.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000014.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000015.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000016.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000017.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000018.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000019.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000020.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000021.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000022.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000023.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000024.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000025.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000026.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000027.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000028.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000029.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000030.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000031.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000032.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000033.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000034.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000035.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000036.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000037.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000038.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000039.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000040.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000041.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000042.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000043.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000044.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000045.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000046.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000047.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000048.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000049.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000050.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000051.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000052.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000053.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000054.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000055.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000056.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000057.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000058.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000059.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000060.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000061.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000062.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000063.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000064.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000065.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000066.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000067.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000068.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000069.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000070.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000071.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000072.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000073.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000074.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000075.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000076.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000077.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000078.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000079.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000080.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000081.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000082.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000083.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000084.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000085.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000086.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000087.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000088.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000089.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000090.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000091.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000092.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/umm_000093.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000000.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000001.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000002.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000003.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000004.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000005.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000006.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000007.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000008.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000009.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000010.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000011.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000012.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000013.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000014.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000015.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000016.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000017.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000018.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000019.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000020.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000021.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000022.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000023.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000024.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000025.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000026.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000027.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000028.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000029.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000030.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000031.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000032.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000033.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000034.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000035.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000036.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000037.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000038.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000039.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000040.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000041.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000042.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000043.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000044.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000045.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000046.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000047.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000048.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000049.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000050.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000051.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000052.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000053.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000054.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000055.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000056.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000057.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000058.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000059.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000060.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000061.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000062.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000063.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000064.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000065.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000066.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000067.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000068.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000069.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000070.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000071.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000072.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000073.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000074.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000075.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000076.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000077.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000078.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000079.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000080.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000081.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000082.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000083.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000084.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000085.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000086.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000087.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000088.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000089.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000090.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000091.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000092.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000093.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000094.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000095.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000096.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000097.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000098.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/runs/1515111639.3141341/uu_000099.png</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Semantic-Segmentation" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Tools\Anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Semantic-Segmentation" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="Semantic-Segmentation" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Semantic-Segmentation" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Semantic-Segmentation" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Twisted Trial">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Semantic-Segmentation" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Semantic-Segmentation" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Semantic-Segmentation" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d9a8be82-b251-4a45-b77e-0fa011c22831" name="Default" comment="" />
+      <created>1514839558823</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1514839558823</updated>
+    </task>
+    <task id="LOCAL-00001" summary="testing">
+      <created>1514914755833</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1514914755833</updated>
+    </task>
+    <task id="LOCAL-00002" summary="progresses on cpu well&#10;hangs on gpu for some reason">
+      <created>1514947488355</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1514947488355</updated>
+    </task>
+    <task id="LOCAL-00003" summary="found source of bug&#10;&#10;tf session variables were not initialized">
+      <created>1515001978348</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1515001978348</updated>
+    </task>
+    <task id="LOCAL-00004" summary="set tensorflow verbosity to INFO">
+      <created>1515002285560</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1515002285560</updated>
+    </task>
+    <task id="LOCAL-00005" summary="slight change to output and logging">
+      <created>1515003793369</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1515003793369</updated>
+    </task>
+    <task id="LOCAL-00006" summary="starting to train properly&#10;&#10;will work on adding tensorboard in future">
+      <created>1515012729262</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1515012729262</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added regularization loss to overall cross enthropy loss computation to make better use of regularization efforts in layers">
+      <created>1515087565878</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1515087565878</updated>
+    </task>
+    <task id="LOCAL-00008" summary="experimenting with learning rate and batch size">
+      <created>1515105181482</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1515105181482</updated>
+    </task>
+    <task id="LOCAL-00009" summary="changed batch size back down to 10">
+      <created>1515106198163</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1515106198163</updated>
+    </task>
+    <task id="LOCAL-00010" summary="changed batch size back down to 15&#10;and learning rate is reset to 1e-3">
+      <created>1515106740006</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1515106740006</updated>
+    </task>
+    <task id="LOCAL-00011" summary="changed batch size back down to 5">
+      <created>1515107823937</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1515107823937</updated>
+    </task>
+    <task id="LOCAL-00012" summary="changed batch size back up to 8">
+      <created>1515109322869</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1515109322869</updated>
+    </task>
+    <task id="LOCAL-00013" summary="changed batch size back up to 8&#10;changed learning_rate to 1e-3">
+      <created>1515110433604</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1515110433604</updated>
+    </task>
+    <task id="LOCAL-00014" summary="changed batch size back up to 7">
+      <created>1515112008458</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1515112008458</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5021482" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.49785176" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12620838" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="testing" />
+    <MESSAGE value="progresses on cpu well&#10;hangs on gpu for some reason" />
+    <MESSAGE value="found source of bug&#10;&#10;tf session variables were not initialized" />
+    <MESSAGE value="set tensorflow verbosity to INFO" />
+    <MESSAGE value="slight change to output and logging" />
+    <MESSAGE value="starting to train properly&#10;&#10;will work on adding tensorboard in future" />
+    <MESSAGE value="added regularization loss to overall cross enthropy loss computation to make better use of regularization efforts in layers" />
+    <MESSAGE value="experimenting with learning rate and batch size" />
+    <MESSAGE value="changed batch size back down to 10" />
+    <MESSAGE value="changed batch size back down to 15&#10;and learning rate is reset to 1e-3" />
+    <MESSAGE value="changed batch size back down to 5" />
+    <MESSAGE value="changed batch size back up to 8" />
+    <MESSAGE value="changed batch size back up to 8&#10;changed learning_rate to 1e-3" />
+    <MESSAGE value="changed batch size back up to 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed batch size back up to 7" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1869">
+          <caret line="100" column="4" lean-forward="false" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1869">
+          <caret line="100" column="4" lean-forward="false" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data_road/training/gt_image_2/um_lane_000000.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data_road/training/image_2/um_000000.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="636">
+            <caret line="68" column="1" lean-forward="false" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="246" column="22" lean-forward="false" selection-start-line="246" selection-start-column="22" selection-end-line="246" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.5 interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Semantic-Segmentation</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
