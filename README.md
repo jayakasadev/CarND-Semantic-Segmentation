@@ -71,8 +71,13 @@ A well written README file can enhance your project and portfolio.  Develop your
     - batch-size = 7
     - epochs = 50
     - learning_rate = 1e-3
- 8. 
-     - 
-     - batch-size = 9
-     - epochs = 50
-     - learning_rate = 1e-3
+8. Loss:  0.138438
+    - Loss shot up a little bit. Seems I need to experiment with batch-size a little more, but 8 seems ideal so far.
+    - batch-size = 9
+    - epochs = 50
+    - learning_rate = 1e-3
+9. 
+    - Will now start experimenting with learning rate. 1e-3 may be too large.
+    - batch-size = 11
+    - epochs = 50
+    - learning_rate = 1e-3
