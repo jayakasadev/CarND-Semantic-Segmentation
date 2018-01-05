@@ -91,8 +91,8 @@ A well written README file can enhance your project and portfolio.  Develop your
     - batch-size = 11
     - epochs = terminated at 35
     - learning_rate = 5e-4
-12. 
-    - 
+12. Loss:  0.0631658
+    - Lowest error yet.
     - batch-size = 8
     - epochs = 50
     - learning_rate = 8e-4
