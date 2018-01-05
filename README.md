@@ -50,13 +50,18 @@ A well written README file can enhance your project and portfolio.  Develop your
     - Loss began to oscillate around 80% starting from epoch 22. No further progress seems possible.
     - batch-size = 15
     - epochs = terminated at epoch 39
-    - learning_rate = 1e-3
+    - learning_rate = 5e-3
 4. Loss:  0.48977 
     - Performance was better than when I trained with batch-size greater than 10. However, it seems the batch is still too small. The loss decreases at a very small rate and gets stuck around 40% at the 30th epoch.
     - batch-size = 5
     - epochs = 50
-    - learning_rate = 1e-3
-5. 
+    - learning_rate = 5e-3
+5. Loss:  1.80411
+    - Realized I forgot to reset the learning rate to 1e-3 after the 2nd trial. Will redo all previous trials with learning_rate set to 1e-3. The loss dropped to .48 at it's lowest around the 13th epoch, and shot back up after the 14th epoch.
+    - batch-size = 8
+    - epochs = 50
+    - learning_rate = 5e-3
+6. 
     - 
     - batch-size = 8
     - epochs = 50
