@@ -21,8 +21,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-622">
-              <caret line="195" column="151" lean-forward="false" selection-start-line="195" selection-start-column="151" selection-end-line="195" selection-end-column="151" />
+            <state relative-caret-position="1583">
+              <caret line="246" column="23" lean-forward="false" selection-start-line="246" selection-start-column="23" selection-end-line="246" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -42,8 +42,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="720">
-                <caret line="87" column="23" lean-forward="false" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+              <first_editor relative-caret-position="780">
+                <caret line="90" column="21" lean-forward="true" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -69,8 +69,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -454,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515115701844</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="changed batch size to 8&#10;learning rate of 5e-4">
+      <created>1515117115320</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1515117115320</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
@@ -514,7 +521,8 @@
     <MESSAGE value="changed batch size back up to 7" />
     <MESSAGE value="changed batch size back up to 9" />
     <MESSAGE value="changed batch size back up to 11" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed batch size back up to 11" />
+    <MESSAGE value="changed batch size to 8&#10;learning rate of 5e-4" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed batch size to 8&#10;learning rate of 5e-4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -616,8 +624,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="720">
-            <caret line="87" column="23" lean-forward="false" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+          <first_editor relative-caret-position="780">
+            <caret line="90" column="21" lean-forward="true" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
             <folding />
           </first_editor>
           <second_editor />
@@ -626,8 +634,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-622">
-          <caret line="195" column="151" lean-forward="false" selection-start-line="195" selection-start-column="151" selection-end-line="195" selection-end-column="151" />
+        <state relative-caret-position="1583">
+          <caret line="246" column="23" lean-forward="false" selection-start-line="246" selection-start-column="23" selection-end-line="246" selection-end-column="23" />
           <folding />
         </state>
       </provider>
